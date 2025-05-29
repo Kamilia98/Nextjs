@@ -1,15 +1,6 @@
 import Link from 'next/link';
 import { cookies } from 'next/headers';
-
-interface Recipe {
-  id: number;
-  name: string;
-  image: string;
-  prepTimeMinutes: number;
-  cookTimeMinutes: number;
-  difficulty: string;
-  cuisine: string;
-}
+import { Recipe } from '@/models/recipe';
 
 async function getAllRecipes(): Promise<{ recipes: Recipe[] }> {
   const response = await fetch('https://dummyjson.com/recipes?limit=12');
