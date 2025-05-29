@@ -9,7 +9,7 @@ export default function HomePage() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-6">
+        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between">
           <h2 className="text-2xl font-semibold mb-4 text-blue-600">
             Browse Recipes
           </h2>
@@ -24,7 +24,7 @@ export default function HomePage() {
           </a>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-6">
+        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between">
           <h2 className="text-2xl font-semibold mb-4 text-green-600">
             Create Account
           </h2>
@@ -39,7 +39,7 @@ export default function HomePage() {
           </a>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-6">
+        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between">
           <h2 className="text-2xl font-semibold mb-4 text-purple-600">
             Dashboard
           </h2>
