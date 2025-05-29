@@ -1,4 +1,3 @@
-// app/recipes/layout.tsx
 import { cookies } from 'next/headers';
 
 interface RecipesLayoutProps {

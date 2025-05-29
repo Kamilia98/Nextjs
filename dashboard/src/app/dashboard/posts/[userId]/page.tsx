@@ -9,7 +9,6 @@ const UserPostsPage = async ({ params }: { params: { userId: number } }) => {
   const data = await fetchPosts();
   const posts: Post[] = data.posts.filter((post) => post.userId == userId);
 
-  // Fetch users for each post in parallel
   const usersMap: Record<number, User> = {};
   await Promise.all(
     posts.map(async (post) => {

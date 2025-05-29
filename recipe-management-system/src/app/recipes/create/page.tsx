@@ -1,4 +1,3 @@
-// app/recipes/create/page.tsx
 'use client';
 
 import { useState } from 'react';

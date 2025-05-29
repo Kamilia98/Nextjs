@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-// GET all recipes
 export async function GET() {
   try {
     const response = await fetch('https://dummyjson.com/recipes');
@@ -14,7 +13,6 @@ export async function GET() {
   }
 }
 
-// POST new recipe
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -34,5 +32,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-
-

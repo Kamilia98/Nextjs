@@ -8,7 +8,6 @@ const PostsPage = async () => {
   const data = await fetchPosts();
   const posts: Post[] = data.posts;
 
-  // Fetch users for each post in parallel
   const usersMap: Record<number, User> = {};
   await Promise.all(
     posts.map(async (post) => {
